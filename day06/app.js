@@ -1,6 +1,8 @@
-import { input } from './input.js';
-
-//const input = [['abc', 'abd']]
+const fs = require("fs");
+const path = require("path");
+const input = fs.readFileSync(path.resolve(__dirname, "./input.txt"), "utf-8")
+    .split("\n\n")
+    .map(group => group.split("\n"));
 
 // star1: 6633 correct
 let countSums = 0;
@@ -10,8 +12,8 @@ let sumSet = 0;
 for (let i = 0; i < input.length; i++) {                    // iterate over groups
     for (let j = 0; j < input[i].length; j++) {             // iterate over persons
         for (let k = 0; k < input[i][j].length; k++) {      // iterate over answers (single letters)
-            if (answerSet.indexOf(input[i][j][k]) < 0) {    // check if answer is in set of collected answers
-                sumSet++;                                   // if answer is new -> count new answer
+            if (answerSet.indexOf(input[i][j][k]) < 0) {    // check if answer is new
+                sumSet++;                                   // count new answer
                 answerSet += input[i][j][k];                // remember answer as collected
             }
         }
