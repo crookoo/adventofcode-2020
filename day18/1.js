@@ -1,10 +1,5 @@
-const fs = require("fs");
-const path = require("path");
-const input = fs.readFileSync(path.resolve(__dirname, "./input.txt"), "utf-8")
-    .replace(/ /g, "")
-    .split("\n")
-    .map((x) => x.split(""));
-
+const parser = require('./input/inputParser');
+const input = parser.parse('input');
 
 let lastBracketOpen = null;
 let sum = 0;
@@ -38,6 +33,8 @@ console.log(sum);
 
 // star1: 69490582260 correct, 1st try
 
+
+//-- Helper functions --
 
 function handleBracket(currentExpression, start, end) {
     let result = calculate(currentExpression, start + 1, end - 1);
