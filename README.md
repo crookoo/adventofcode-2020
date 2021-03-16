@@ -1,5 +1,5 @@
 # Advent of Code 2020 - My Solutions
-[![Completion Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/crookoo/adventofcode-2020/main/.github/badges/completion.json)](https://github.com/crookoo/adventofcode-2020)
+[![Completion Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/crookoo/adventofcode-2020/main/.github/badges/completion.json?token=AEA5HXDCDYT3R5TZ5T54XODALG2AO)](https://github.com/crookoo/adventofcode-2020)
 
 ## Days
 
