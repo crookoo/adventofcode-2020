@@ -1,0 +1,14 @@
+{
+  "name": "day19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Michael Zimmermann",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
