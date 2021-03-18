@@ -1,0 +1,14 @@
+const readInputFromFile = (filename) => {
+    const { readFileSync } = require("fs");
+    const { resolve } = require("path");
+    return readFileSync(resolve(__dirname, `./${filename}.txt`), "utf-8");
+};
+
+const parse = (filename) => {
+    const rawInput = readInputFromFile(filename);
+    return parsedInput = rawInput
+        .split("\n\n")
+        .map((line) => line.slice(5).split(":\n"));
+};
+
+exports.parse = parse;
