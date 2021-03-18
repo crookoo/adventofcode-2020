@@ -1,5 +1,4 @@
 class Tile {
-    count = 0;
 
     constructor(idString, rawArray) {
         this.id = parseInt(idString, 10);
