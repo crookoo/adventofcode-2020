@@ -25,7 +25,7 @@
 | [Day 17: Conway Cubes](https://github.com/crookoo/adventofcode-2020/tree/main/day17)| ⭐ | ⭐ |
 | [Day 18: Operation Order](https://github.com/crookoo/adventofcode-2020/tree/main/day18)| ⭐ | ⭐ |
 | [Day 19: Monster Messages](https://github.com/crookoo/adventofcode-2020/tree/main/day19)| ⭐ | ⭐ |
-| [Day 20: Jurassic Jigsaw](https://github.com/crookoo/adventofcode-2020/tree/main/day20)| ⭐ | |
+| [Day 20: Jurassic Jigsaw](https://github.com/crookoo/adventofcode-2020/tree/main/day20)| ⭐ | ⭐ |
 | [Day 21: TBD]()| | |
 | [Day 22: TBD]()| | |
 | [Day 23: TBD]()| | |
