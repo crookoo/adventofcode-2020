@@ -25,19 +25,9 @@ class Tile {
         return resultList;
     }
 
-    getEdges() {
-        let arr = this.tileArray;
-        let len = arr.length;
-        let resultList = ['', '', '', ''];
-
-        for (let i = 0; i < len; i++) {
-            resultList[0] += arr[0][i];
-            resultList[1] += arr[i][len - 1];
-            resultList[2] += arr[len - 1][len - 1 - i];
-            resultList[3] += arr[len - 1 - i][0];
-        }
-
-        return resultList;
+    getFirstFourEdges() {
+        let onlyFirstFourEdges = this.getAllEdges().slice(0,4);
+        return onlyFirstFourEdges;
     }
 
     print() {

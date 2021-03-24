@@ -27,7 +27,7 @@ class PuzzleMap {
             currentTile = queue.shift();
             alreadyVisited.push(currentTile);
 
-            currentTile.getEdges().forEach((currentEdge, i) => {
+            currentTile.getFirstFourEdges().forEach((currentEdge, i) => {
                 this.tiles.forEach((compareTile) => {
                     compareTile.getAllEdges().forEach((compareEdge, j) => {
                         if (currentEdge === compareEdge && currentTile.id !== compareTile.id) {
