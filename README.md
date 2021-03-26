@@ -26,7 +26,7 @@
 | [Day 18: Operation Order](https://github.com/crookoo/adventofcode-2020/tree/main/day18)| ⭐ | ⭐ |
 | [Day 19: Monster Messages](https://github.com/crookoo/adventofcode-2020/tree/main/day19)| ⭐ | ⭐ |
 | [Day 20: Jurassic Jigsaw](https://github.com/crookoo/adventofcode-2020/tree/main/day20)| ⭐ | ⭐ |
-| [Day 21: TBD]()| | |
+| [Day 21: Allergen Assessment](https://github.com/crookoo/adventofcode-2020/tree/main/day21)| ⭐ | ⭐ |
 | [Day 22: TBD]()| | |
 | [Day 23: TBD]()| | |
 | [Day 24: TBD]()| | |
