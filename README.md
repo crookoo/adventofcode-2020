@@ -1,8 +1,12 @@
 # Advent of Code 2020 - My Solutions
-[![Completion Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/crookoo/adventofcode-2020/main/.github/badges/completion.json?token=AEA5HXDCDYT3R5TZ5T54XODALG2AO)](https://github.com/crookoo/adventofcode-2020)
+[![Completion Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/crookoo/adventofcode-2020/main/.github/badges/completion.json)](https://github.com/crookoo/adventofcode-2020)
+
+## Techniques
+
+The solutions are written in JavaScript. Node.js is needed to execute the files.  
+Example: ```node 1``` to execute 1.js in the same directory.
 
 ## Days
-
 
 | Day  | Part One | Part Two |
 |---|:---:|:---:|
@@ -27,7 +31,7 @@
 | [Day 19: Monster Messages](https://github.com/crookoo/adventofcode-2020/tree/main/day19)| ⭐ | ⭐ |
 | [Day 20: Jurassic Jigsaw](https://github.com/crookoo/adventofcode-2020/tree/main/day20)| ⭐ | ⭐ |
 | [Day 21: Allergen Assessment](https://github.com/crookoo/adventofcode-2020/tree/main/day21)| ⭐ | ⭐ |
-| [Day 22: TBD]()| | |
+| [Day 22: Crab Combat](https://github.com/crookoo/adventofcode-2020/tree/main/day22)| ⭐ | |
 | [Day 23: TBD]()| | |
 | [Day 24: TBD]()| | |
 | [Day 25: TBD]()| | |
