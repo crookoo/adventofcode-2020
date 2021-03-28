@@ -1,5 +1,4 @@
 class Player {
-    initialCardStack = [];
 
     constructor(rawInput) {
         let input = rawInput.split(':\n');
