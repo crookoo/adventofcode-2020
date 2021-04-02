@@ -11,6 +11,7 @@ class Game {
 
     makeMoves() {
         const pickupAmount = 3;
+
         let currentCup = this.cups[0];
         let currentIndex = 0;
         let destinationIndex = 0;
@@ -49,6 +50,34 @@ class Game {
 
     }
 
+    makeMovesInplace() {
+        const pickupAmount = 3;
+
+        let currentCup = this.cups[0];
+        let currentIndex = 0;
+        let destinationIndex = null;
+
+        for (let j = 0; j < this.moves; j++) {
+            destinationIndex = this.getDestinationIndex2(currentIndex);
+
+            if (currentIndex < destinationIndex) {
+                this.cups.splice(this.getIndex(destinationIndex - (pickupAmount - 1)), 0, ...this.cups.splice(this.getIndex(currentIndex + 1), pickupAmount));
+            } else {
+                this.cups.splice(this.getIndex(destinationIndex + 1), 0, ...this.cups.splice(this.getIndex(currentIndex + 1), pickupAmount));
+            }
+
+            // console.log(this.cups.join());
+
+            currentIndex = this.getIndex(this.cups.indexOf(currentCup) + 1);
+            if (currentIndex >= this.cups.length - pickupAmount) {
+                this.cups.splice(this.cups.length - 3, 0, ...this.cups.splice(0, 3));
+                currentIndex = currentIndex - pickupAmount;
+            }
+
+            currentCup = this.cups[currentIndex];
+        }
+    }
+
     getIndex(inputIndex) {
         const arrLength = this.cups.length;
         return ((inputIndex) % arrLength + arrLength) % arrLength;
@@ -60,6 +89,21 @@ class Game {
         while (threeCups.indexOf(destinationCandidate) !== -1) {
             destinationCandidate--;
             if (destinationCandidate < this.lowestCup) destinationCandidate = this.highestCup;
+        }
+        return this.cups.indexOf(destinationCandidate);
+    }
+
+    getDestinationIndex2(currentIndex) {
+        let currentCup = this.cups[currentIndex];
+        let destinationCandidate = currentCup - 1;
+        if (destinationCandidate < this.lowestCup) destinationCandidate = this.highestCup;
+        for (let j = 0; j < 3; j++) {
+            for (let i = 1; i <= 3; i++) {
+                if (this.cups[this.getIndex(currentIndex + i)] === destinationCandidate) {
+                    destinationCandidate--;
+                    if (destinationCandidate < this.lowestCup) destinationCandidate = this.highestCup;
+                }
+            }
         }
         return this.cups.indexOf(destinationCandidate);
     }
