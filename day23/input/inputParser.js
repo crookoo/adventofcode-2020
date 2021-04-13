@@ -7,7 +7,8 @@ const readInputFromFile = (filename) => {
 const parse = (filename) => {
     const rawInput = readInputFromFile(filename);
     return parsedInput = rawInput
-        .split("");
+        .split("")
+        .map(char => parseInt(char));
 };
 
 exports.parse = parse;

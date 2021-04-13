@@ -2,7 +2,7 @@ class Game {
 
     constructor(seedInput, maxValueFillup, moves) {
         this.moves = moves;
-        let seed = seedInput.map(char => parseInt(char));
+        let seed = seedInput;
         this.highestCup = Math.max(...seed);
         this.lowestCup = Math.min(...seed);
         this.cups = seed.concat(this.numberArrayWithOffset(maxValueFillup, this.highestCup));
