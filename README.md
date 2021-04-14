@@ -33,5 +33,5 @@ Example: ```node 1``` to execute 1.js in the same directory.
 | [Day 21: Allergen Assessment](https://github.com/crookoo/adventofcode-2020/tree/main/day21)| ⭐ | ⭐ |
 | [Day 22: Crab Combat](https://github.com/crookoo/adventofcode-2020/tree/main/day22)| ⭐ | ⭐ |
 | [Day 23: Crab Cups](https://github.com/crookoo/adventofcode-2020/tree/main/day23)| ⭐ | ⭐ |
-| [Day 24: Lobby Layout](https://github.com/crookoo/adventofcode-2020/tree/main/day24)| ⭐ | |
+| [Day 24: Lobby Layout](https://github.com/crookoo/adventofcode-2020/tree/main/day24)| ⭐ | ⭐ |
 | [Day 25: TBD]()| | |

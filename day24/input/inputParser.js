@@ -10,6 +10,4 @@ const parse = (filename) => {
         .split("\n");
 };
 
-
-
 exports.parse = parse;
