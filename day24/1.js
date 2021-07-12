@@ -1,5 +1,6 @@
-const parser = require('./input/inputParser');
-const Floor = require('./Floor');
+import * as parser from './input/inputParser.js';
+import { Floor } from './Floor.js';
+
 const input = parser.parse('input');
 
 let floor = new Floor(input, 100);

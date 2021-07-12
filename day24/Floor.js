@@ -84,7 +84,7 @@ class Floor {
                 if (tile === 1) numberOfBlackTiles++;
             })
         })
-        
+
         return numberOfBlackTiles;
     }
 
@@ -128,4 +128,4 @@ class Floor {
 
 }
 
-module.exports = Floor;
+export { Floor };

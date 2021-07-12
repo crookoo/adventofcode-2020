@@ -1,13 +1,18 @@
+import { readFileSync } from 'fs';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
 const readInputFromFile = (filename) => {
-    const { readFileSync } = require("fs");
-    const { resolve } = require("path");
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
     return readFileSync(resolve(__dirname, `./${filename}.txt`), "utf-8");
 };
 
 const parse = (filename) => {
     const rawInput = readInputFromFile(filename);
-    return parsedInput = rawInput
+    const parsedInput = rawInput
         .split("\n");
+    return parsedInput;
 };
 
-exports.parse = parse;
+export { parse };
